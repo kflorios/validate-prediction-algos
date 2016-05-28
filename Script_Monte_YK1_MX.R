@@ -61,8 +61,8 @@ outD <- as.data.frame(cbind("thres" = out[,2],
                             "5TSS" = out[,29], 
                             "5HSS" = out[,30]))
 
-write.table(outD, file = paste(root, "/Results/coefTable_Scnr", Scenario, ".txt", sep = ""), row.names=F)                            
-
+#write.table(outD, file = paste(root, "/Results/coefTable_Scnr", Scenario, ".txt", sep = ""), row.names=F)                            
+write.table(outD, file = paste(root, "/coefTable_Scnr", Scenario, ".txt", sep = ""), row.names=F)                            
 
 # LaTeX output
 #outD <- cbind("Param" = rep(paste("$\\beta_", 1:4, "$", sep = ""), len = nrow(outD)), outD)
